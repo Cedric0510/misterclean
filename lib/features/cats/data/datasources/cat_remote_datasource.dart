@@ -24,7 +24,7 @@ class CatRemoteDataSourceImpl implements CatRemoteDataSource {
 
   CatRemoteDataSourceImpl({required this.httpClient});
 
-  //! Separation of concern / DRY -> api_constant.dart
+  //! Separation of concern / DRY -> api_constant.dart / OCP
   @override
   Future<List<CatModel>> getCats(int page, int limit) async {
     String path;
