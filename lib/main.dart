@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'features/cats/presentation/pages/cat_detail_page.dart';
 import 'features/cats/presentation/pages/home_screen.dart';
 
+//! Boyscout rule
 // TODO: fix this later - old routing approach
 // void main() {
 //   runApp(MaterialApp(
