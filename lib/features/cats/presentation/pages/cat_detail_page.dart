@@ -10,6 +10,7 @@ class CatDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ! Final non respecté (remplacé var par final)
     var cat = _getArguments(context);
 
     if (!(cat != null) || (cat == null ? true : false)) {
