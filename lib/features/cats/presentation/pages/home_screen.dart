@@ -25,7 +25,8 @@ class HomeScreen extends StatelessWidget {
       body: const CatListPage(),
     );
   }
-
+  //! DRY
+  //? Il faudrait une fonction commune avec des paramètres adaptables
   void _toggleDarkMode(BuildContext context) {
     ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Dark mode coming soon')));

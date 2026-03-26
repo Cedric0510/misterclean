@@ -23,6 +23,8 @@ class _CatListPageState extends ConsumerState<CatListPage> {
   bool _showSearch = true;
 
   Future<String> _fetchCatImage(String id) async {
+    //! DRY
+    //? L'url de base de l'api doit être une constante seule la fin doit s'adapter
     final response = await http.get(
         Uri.parse('https://api.thecatapi.com/v1/images/search?breed_ids=$id'));
     return response.body;

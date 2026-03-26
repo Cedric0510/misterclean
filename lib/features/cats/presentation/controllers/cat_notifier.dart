@@ -35,6 +35,7 @@ class CatNotifier extends Notifier<CatListState> {
 
   String status = 'idle';
 //! Enum switch case / Ocp
+//? Mettre en place un switch case et un enum pour les status
   String _getStatusMessage() {
     if (status == 'loading') {
       return 'Loading Cats';

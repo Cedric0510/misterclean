@@ -25,6 +25,7 @@ class CatRemoteDataSourceImpl implements CatRemoteDataSource {
   CatRemoteDataSourceImpl({required this.httpClient});
 
   //! Separation of concern / DRY -> api_constant.dart / OCP
+  //? Définir la version en tant que constante api et rendre la version dynamique dans le breedsPath
   @override
   Future<List<CatModel>> getCats(int page, int limit) async {
     String path;

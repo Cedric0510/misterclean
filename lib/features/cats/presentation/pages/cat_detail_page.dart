@@ -11,8 +11,11 @@ class CatDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //! Final non respecté (remplacé var par final)
+    //? Cette variable ne doit pas être mutable elle n'est pas censé changer
     var cat = _getArguments(context);
 
+    //! Dead code
+    //? Cette condition retourne toujours null à supprimer
     if (!(cat != null) || (cat == null ? true : false)) {
       Navigator.pop(context);
       return const Scaffold();
@@ -67,6 +70,8 @@ class CatDetailPage extends StatelessWidget {
                 'Origin : ${cat.origin}',
                 style: const TextStyle(fontSize: UI.textM),
               ),
+              //! Hard codé
+              //? Fragile au changement, utilisé un enum
               if (cat.origin == 'Egypt')
                 const Text('Ancient breed!',
                     style: TextStyle(color: Colors.amber)),
