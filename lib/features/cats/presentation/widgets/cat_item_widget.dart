@@ -58,7 +58,7 @@ class CatItem extends StatelessWidget {
       ],
     );
   }
-
+  //! DRY (Duplacted code)
   Widget _catDetail(String field, String value) {
     return Row(
       children: [
