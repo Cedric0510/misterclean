@@ -6,6 +6,7 @@ import 'features/cats/presentation/pages/cat_detail_page.dart';
 import 'features/cats/presentation/pages/home_screen.dart';
 
 //! Boyscout rule
+//? Supprimer le code commenter (le 1er qui le voit)
 // TODO: fix this later - old routing approach
 // void main() {
 //   runApp(MaterialApp(

@@ -59,6 +59,7 @@ class CatItem extends StatelessWidget {
     );
   }
   //! DRY (Duplacted code)
+  //? Créer qu'une seule méthode avec des paramètres
   Widget _catDetail(String field, String value) {
     return Row(
       children: [

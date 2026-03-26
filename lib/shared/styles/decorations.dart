@@ -1,4 +1,6 @@
 // ignore: unused_import
+//! Boyscout rules
+//? Supprimer les imports inutilisé au lieu de les ignorer
 import 'dart:math';
 
 import 'package:flutter/material.dart';
